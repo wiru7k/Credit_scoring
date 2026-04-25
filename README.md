@@ -13,11 +13,19 @@ The main deliverable is the notebook `notebooks/01_EDA.ipynb`, written as a repr
 
 ## Dataset
 
-Kaggle: Credit Card Fraud Detection.
+[Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) from Kaggle
 
-Expected file: `data/creditcard.csv`.
+- **284,807** transactions, **492** fraudulent (0.172% — highly imbalanced)
+- **30 anonymized features** (V1–V28 from PCA transformation)
+- **Time** — seconds elapsed since first transaction
+- **Amount** — transaction amount
+- **Class** — target variable (0 = legitimate, 1 = fraudulent)
+
+> Detailed feature descriptions and full EDA are available in `notebooks/01_EDA.ipynb`
 
 ## How to run
+
+Download `creditcard.csv` from [Kaggle](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) and place it in the `data/` directory.
 
 ```bash
 python -m venv .venv
